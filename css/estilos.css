@@ -84,6 +84,10 @@ iframe {
     border-radius: .3em;
 }
 
+.header .navbar .container-fluid .navbar-brand img {
+    width: 150px;
+}
+
 .info {
     justify-content: initial;
     align-items: initial;
@@ -153,6 +157,15 @@ p {
     position: relative;    
 }
 
+.maps {
+    height: 500px;
+}
+
+.card-img-fb {
+    width: 500px;
+    height: 400px;
+}
+
 #contacto, #ubicacion {
     background-color: #fccba2;
     border-radius: 15px;
@@ -160,6 +173,11 @@ p {
 
 .mb-2 .btn:active {
     background-color: #fd8743;
+}
+
+.footer div ul li img {
+    width: 45px;
+    height: 45px;
 }
 
 @media screen and (max-width: 768px) {
