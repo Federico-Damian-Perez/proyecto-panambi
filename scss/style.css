@@ -1,0 +1,133 @@
+a {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  a {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  a {
+    font-size: 1.2em;
+  }
+}
+
+.header {
+  z-index: 2;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header .navbar {
+  background-color: #222222;
+}
+
+.header .navbar .container-fluid .navbar-brand {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.header .navbar .container-fluid .navbar-brand:hover {
+  opacity: .7;
+}
+
+.header .navbar .container-fluid .navbar-toggler {
+  color: #ffa56a;
+}
+
+.header .navbar .container-fluid .collapse ul li a {
+  border-radius: .3em;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.header .navbar .container-fluid .collapse ul li a:hover {
+  border-radius: .3em;
+  background-color: #ffa56a;
+  color: white;
+}
+
+.header .navbar .container-fluid .collapse ul li a:active {
+  background-color: #ff771d;
+}
+
+.container .row .col .card {
+  margin-bottom: 2em;
+  overflow: hidden;
+  -webkit-transform: all 500ms ease;
+          transform: all 500ms ease;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container .row .col .card img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.container .row .col .card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer {
+  margin: 2em 0;
+  text-align: center;
+  border-width: 2px;
+  border-top: solid 2px #222222;
+}
+
+.footer .titulo {
+  padding: .5em;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: .3em;
+}
+
+.footer ul li a img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.footer ul li a img:hover {
+  opacity: .8;
+}
+
+.footer a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.color1 {
+  color: #222222;
+}
+
+.color2 {
+  color: #ffa56a;
+}
+
+.color3 {
+  color: #ff771d;
+}
+
+.color4 {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

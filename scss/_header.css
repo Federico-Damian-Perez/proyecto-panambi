@@ -1,0 +1,29 @@
+.header .navbar {
+  background-color: #222222;
+}
+
+.header .navbar .container-fluid .navbar-brand {
+  transition: all 1s ease;
+}
+
+.header .navbar .container-fluid .navbar-brand:hover {
+  opacity: .7;
+}
+
+.header .navbar .container-fluid .navbar-toggler {
+  color: #ffa238;
+}
+
+.header .navbar .container-fluid .collapse ul li a {
+  border-radius: .3em;
+  transition: all .8s ease;
+}
+
+.header .navbar .container-fluid .collapse ul li a:hover {
+  border-radius: .3em;
+  background-color: #fda469;
+}
+
+.header .navbar .container-fluid .collapse ul li a:active {
+  background-color: #ff802c;
+}

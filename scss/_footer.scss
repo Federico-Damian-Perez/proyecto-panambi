@@ -1,0 +1,33 @@
+$colornegro: rgb(34, 34, 34);
+
+
+.footer {
+    margin: 2em 0;
+    text-align: center;
+    border-width: 2px;
+    border-top: solid 2px $colornegro;
+    .titulo {
+        padding: .5em;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: .3em;
+            a {
+                img {
+                    transition: all .5s ease;
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+    a {
+        list-style: none;
+        text-decoration: none;
+        
+    }
+}

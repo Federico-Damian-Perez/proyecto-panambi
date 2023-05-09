@@ -1,0 +1,86 @@
+$colornegro: rgb(34, 34, 34);
+$colornaranja1: rgb(255, 165, 106);
+$colornaranja2: rgb(255, 119, 29);
+
+$breakpoints: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+    xl : 1280px
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+a {
+    font-size: 1em;
+}
+
+
+@include media-up(sm) {
+    @extend nav-item;
+
+}
+
+@include media-up(md) {
+    @extend nav-item;
+}
+
+@include media-up(lg) {
+    a {
+        font-size: 1.1em;            
+    }
+}
+
+@include media-up(xl) {
+    a {
+        font-size: 1.2em;
+    }
+}
+
+
+.header {
+    z-index: 2;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    .navbar {
+        background-color: $colornegro;
+        .container-fluid {
+            .navbar-brand {
+                transition: all 1s ease;
+                &:hover {
+                    opacity: .7;
+                }
+            }
+            .navbar-toggler {
+                color: $colornaranja1;
+            }
+            .collapse {
+                ul {
+                    li {
+                        a { 
+                            
+                            border-radius: .3em;
+                            transition: all .8s ease;
+                            &:hover {
+                                border-radius: .3em;
+                                background-color: $colornaranja1;
+                                color: white;
+                            }
+                            &:active {
+                                background-color: $colornaranja2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
