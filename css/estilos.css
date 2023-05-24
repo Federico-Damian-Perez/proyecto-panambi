@@ -255,6 +255,7 @@ p {
 
     .footer ul {
         display: flex;
+        text-align: center;
     }
     
     .footer img {
